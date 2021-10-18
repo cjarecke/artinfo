@@ -3,12 +3,12 @@
 html, body{
     overflow-x: hidden;
     height: 100%;
+    background-color: #A5A6C3 !important;
 }
 
 body{
-    width: 76%;
+    /* width: 76%; */
     margin: auto !important;
-    background-color: #9DA3B0 !important;
 }
 
 a {
@@ -20,37 +20,37 @@ a:hover{
     text-decoration: none;
 }
 
-.page-content{
-    position: relative;
-    margin: 10px;
-    padding: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    justify-content: space-around;
-    
+.content{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    background-color: silver;
+    width: 76%;
+    margin: auto;
+    padding: auto;
 }
 
 /* navbar (nav) > navbar-collapse (div) > navbar-nav (ul) > nav-item (li) > nav-link (a) */
 
 .navibar{
     background-color: #615878;
-    /* display: flex;
-    flex-direction: row;
-    align-items: center; may not need */
     position: static;
-    height: 4em;
+    height: 3.5em;
+    /* width: 76%; */
+    margin: auto;
 } 
 
 .navilinks{
-    background-color: rgb(0, 174, 255);
+    /* background-color: #615878; */
     /* padding: 5px; */
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: row;
+    float: left;
     position: relative;
     height: 100%;
-    left: 15px;
+    left: 15%;
+    margin: auto;
 }
 
 /* .naviitem{
@@ -60,45 +60,61 @@ a:hover{
 } */
 
 .navilinks > li {
-    background-color: seashell;
+    /* background-color: #6F6888; */
     color:rgba(22, 17, 30, .5);
     /* flex: 1; */
     list-style-type: none;
-    /* border-right: 1px solid black; */
+    border-right: 1px solid white;
+    border-left: 1px solid white;
     text-align: center;
-    font-size: 18px;
     transform: skewX(-20deg);
-    padding-top: 18px;
     height: 100%;
+    /* display: block; */
 }
 
-.navilinks > li:hover{
-    background-color: sienna;
+.navilinks li:hover{
+    background-color: #A0E4D3;
 }
 
-.navilinks a {
+/* .navibar .home {
+    background-color: #615878;
+} */
+
+.navilinks span {
+    /* background-color: salmon; */
     display: block;
     transform: skewx(20deg);
+    color:rgba(22, 17, 30, .5);
+    height: 100%;
+    width: 100%;
+    padding-top: 9px;
 }
 
 .home{
     /* width: 100% !important; */
+    
+    background-color: #615878;
     font-weight: bold;
+    font-size: 22px;
     flex-grow: 1;
+    padding-top: 0px;
 }
 .digital, .channel, .queue, .contact{
+    background-color: #6F6888;
+    font-size: 18px;
     flex-grow: 1;
     width: 10px;
+    padding-top: 5px;
+}
+
+.current{
+    background-color: salmon;
 }
 
 .navbar{
     background-color: transparent;
     margin: -80px 0 20px;
     /* border: 2px solid red; */
-}
-
-.navbar-nav .nav-link{
-    justify-content: space-between !important;
 }
 
 .nav-item{
